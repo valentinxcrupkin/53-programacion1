@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Firebase Ej1</title>
     <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="container mt-3">
@@ -28,7 +29,10 @@
                 <input id="inp_dni" placeholder="Ingrese DNI" type="number" class="form-control">
                 </div>
 
+                <input id="inp_id" type="hidden">
+
                 <button id="btn_guardar" class="btn btn">Guardar cliente</button>
+                <button id="btn_actualizar" style="display: none;" onclick="actualizar_cliente()" class="btn btn_primary">Actualizar</button>
             </div>
             <div class="col-8">
                 <table class="table table-striped">
